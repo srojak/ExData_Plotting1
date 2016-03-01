@@ -1,0 +1,6 @@
+windows(480, 480)
+idx1 <- seq(2880)
+png("plot2.png")
+plot(idx1, pwrsub$Global_active_power[idx1], ylab="Global Active Power (kilowatts)", type="n", xlab="sample")
+lines(pwrsub$Global_active_power[idx1])
+dev.off()
