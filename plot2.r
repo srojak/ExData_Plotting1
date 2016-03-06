@@ -1,6 +1,5 @@
+# read the data in using load.r
 windows(480, 480)
-idx1 <- seq(2880)
 png("plot2.png")
-plot(idx1, pwrsub$Global_active_power[idx1], ylab="Global Active Power (kilowatts)", type="n", xlab="sample")
-lines(pwrsub$Global_active_power[idx1])
+plot(pwrsub2$DtTm, pwrsub2$Global_active_power, ylab="Global Active Power (kilowatts)", type="l", xlab="sample")
 dev.off()
